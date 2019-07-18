@@ -1,0 +1,80 @@
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+body[data-theme=dark] {
+	background-color: #121212;
+}
+
+.card[data-theme=dark] {
+	background-color: #1d1d1d;
+	color: #FFF;
+}
+#accion1[data-theme=dark], #accion2[data-theme=dark], #accion3[data-theme=dark], #accion4[data-theme=dark], #accion5[data-theme=dark] {
+	background-color: #3c3c3c;
+}
+
+.modal-header[data-theme=dark]{
+	background-color: #1f1f1f;
+	color: #FFF;
+	border-bottom: 1px solid #121212;
+}
+
+.modal-body[data-theme=dark]{
+	background-color: #1d1d1d;
+	color: #FFF;
+}
+
+.modal-footer[data-theme=dark]{
+	background-color: #1d1d1d;
+	border-top: 1px solid #1d1d1d;
+}
+
+.close[data-theme=dark]{
+	color: #FFF;
+}
+
+table[data-theme=dark]{
+	color: #FFF;
+}
+
+tr:hover[data-theme=dark]{
+	color:#7b7b7b!important;
+}
+
+#ocultoTurnos, #endGame, #botonAccion1_2, #botonAccion2_2, #botonAccion3_2, #botonAccion4_2, #botonAccion5_2{
+	display: none;
+}
+
+.navbar-brand, #pressStart, #endGame{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 15px;
+}
+
+a.glow {
+    animation:glow 1200ms linear 200ms 2 alternate;
+    -moz-animation:glow 1200ms linear 200ms 2 alternate;
+    -webkit-animation:glow 1200ms linear 200ms 2 alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow:0 0 1px 1px rgba(239,61,61,1);
+				border-radius: 15%
+    }
+    20%, 100% {
+        box-shadow:0 0 1px 1px rgba(239,61,61,1), 0 0 3px 8px #EF3D3D;
+				border-radius: 15%
+    }
+}
+
+#cardHeaderTurno, #insertTurnoModal {
+    text-transform: uppercase;
+}
+
+@media only screen (min-width: 992px){
+	#alertTiempoPartida{
+		max-width: 75%!important;
+	}
+}
